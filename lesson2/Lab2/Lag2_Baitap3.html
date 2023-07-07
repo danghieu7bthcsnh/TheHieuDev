@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành 3</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .tieude{
+            height: 50px;
+        }
+        .split{
+            grid-template-rows: 1fr 1fr;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table width="600px" align="center" cellpadding="5px">
+        
+            
+        
+        <tbody align="center">
+            <tr >
+                <td rowspan="3"><b>Buổi</b></td>
+                <td colspan="3" class="tieude"><b>Lịch học</b></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="lightgray">Thời gian</td>
+                <td rowspan="2" bgcolor="lightgray">Môn học</td>
+            </tr>
+            <tr>
+                <td>Bắt đầu</td>
+                <td>Kết thúc</td>
+            </tr>
+            <tr>
+                <td rowspan="2" bgcolor="lightgray"><b>Thứ 2</b></td>
+                <td rowspan="2" bgcolor="lightgray">8:00 AM</td>
+                <td rowspan="2" bgcolor="lightgray">12:00 AM</td>
+                <td bgcolor="lightgray">Cơ sở dữ liệu</td>
+            </tr>
+            <tr>
+                <td>Nhập môn C</td>
+            </tr>
+            <tr>
+                <td rowspan="3" bgcolor="lightgray"><b>Thứ 3</b></td>
+                <td bgcolor="lightgray">8:00 AM</td>
+                <td bgcolor="lightgray">12:00 PM</td>
+                <td rowspan="1" bgcolor="lightgray" id="split">Thiết kế Web</td>
+            </tr>
+            <tr>
+                <td >2:00 PM</td>
+                <td>5:00 PM</td>
+                <td bgcolor="lightgray">PHP</td>
+            </tr>
+            <tr>
+                <td bgcolor="lightgray">6:00 PM</td>
+                <td bgcolor="lightgray">8:00 PM</td>
+            </tr>
+            <tr>
+                <td><b>Thứ 4</b></td>
+                <td>2:00 AM</td>
+                <td>9:00 AM</td>
+                <td>JAVA CORE</td>
+            </tr>
+            
+
+        </tbody>
+        
+    </table>
+</body>
+</html>
