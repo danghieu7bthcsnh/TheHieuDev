@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.itemlv1{
+    padding:20px;
+    position: relative;
+}
+.back-red{
+    background-color: rgb(159, 29, 29);
+}
+.color-white{
+    color: #fff;
+}
+.itemlv1:hover{
+    background-color: #fff;
+   
+}
+.itemlv1:hover .item{
+    color: rgb(159, 29, 29);
+}
+.menulv2{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0%;
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+}
+.itemlv1:hover .menulv2{
+    display: block;   
+}
+.div1{
+    box-shadow: #acacac;
+}
+
+.itemlv2{
+    padding: 20px 10px;
+   width: 100% ;
+}
+.iteml2{
+    color: #fff;
+}
+.itemlv1:hover .menulv2{
+    color: #fff;
+    background-color: rgb(223, 67, 67);
+}
+.itemlv2:hover{
+    background-color: rgb(45, 45, 45);
+   
+}
+@keyframes showDown{
+    from{
+        top: 80%;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    
+    to{
+        top: 100%;
+        
+        opacity: 1;
+    }
+}
+.itemlv1:hover .menulv2{
+    display: block;  
+    animation-name: showDown;
+    animation-duration: 01s;
+}
+
+@media only screen and (max-width: 600px){
+    .flex{
+        display: block;
+    }   
+}
+
+@media only screen and (max-width: 500px){
+    .flex{
+        display: block;
+    }   
+    .back-red{
+        background-color: rgb(39, 57, 162);
+    }
+}
